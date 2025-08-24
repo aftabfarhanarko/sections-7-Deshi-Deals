@@ -50,7 +50,8 @@
     </section>
 
     <!-- Carder Sections Amd DOM Manuplite -->
-    <section id="producat-box-sections" class="w-10/12 mx-auto grid grid-cols-12  py-20 gap-8 bg-pink-50">
+    <section class=" bg-gray-100">
+        <section id="producat-box-sections" class="w-10/12 mx-auto grid grid-cols-12  py-20 gap-8">
 
         <section class="col-span-9  ">
 
@@ -137,7 +138,7 @@
 
 
                     </div>
- 
+
                     <div id="card" class="bg-[#FFFFFF]  rounded-md  p-4 btn-all">
                         <div class="bg-[#1111110d] p-4 rounded-lg" id="card-img">
                             <img class="mx-auto " src="./assets/furniture-3.png" alt="">
@@ -159,7 +160,7 @@
 
 
 
-        <aside class="col-span-3 rounded-lg">
+        <aside class="col-span-3 rounded-lg m-4">
             <div id="coupone" class="p-8 border-1 border-pink-200  bg-[#FFFFFF] rounded-lg">
                 <h1 class="text-xl font-bold mb-5  ">Have coupon?</h1>
                 <div class="join">
@@ -171,13 +172,24 @@
             </div>
 
             <!-- Add values In Js addEveintLisiner -->
-            <div id="addes" class="mt-15 bg-[#FFFFFF]">
+            <div  class="mt-15 bg-[#FFFFFF]">
+                <div class="border-t-1 border-b-1 border-gray-300 rounded-lg py-5 px-5 ">
+                    <h2 id="totaalsprice" class="font-bold text-xl mb-2">Total price: <span id="totalprices">00.00</span>TK</h2>
+                    <h2 id="discount" class="font-bold text-xl mb-2"> Discount : 00.00TK</h2>
+                     <h2 id="totalDiscountPrice" class="font-bold text-xl"> Total: 00.00 TK</h2>
+                     <button id="clear-all" class="btn btn-secondary w-full mt-9 ">Clear All</button>
+                </div>
+
+                <!-- Addes Js File This Sections -->
+                 <div id="addes" class="mt-5 p-5">
 
                 
+                 </div>
 
             </div>
         </aside>
 
+        </section>
     </section>
 
 
