@@ -67,6 +67,9 @@ document
 
     let clear = document.getElementById('clear-all-prices').addEventListener('click', function () {
        document.getElementById('addes').innerText = " ";
+       document.getElementById('totalesProducatPrice').innerText =  "0";
+       document.getElementById('totalprices').innerText = "0";
+       
     })
      console.log(demo);
       
