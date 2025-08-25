@@ -49,12 +49,28 @@ document
       cardesCointernar.appendChild(newCard);
 
     //   Total Price er  kaj Hoy nai akhno ..?
-      let qunatieyPrice = document.getElementById('totaalsprice').innerText;
+      let qunatieyPrice = document.getElementById('totalprices').innerText;
 
-      let myBlance = Number(qunatieyPrice) ++;
-     document.getElementById('totaalsprice').innerText = myBlance;
+      // console.log(qunatieyPrice);
+
+      let myBlance = Number(producatPrice) + Number(qunatieyPrice);
+
+      let totalDiscountPrice = document.getElementById('discounts').innerText;
+      let totalesq =  myBlance - totalDiscountPrice;
+      console.log(totalDiscountPrice);
+     document.getElementById('totalprices').innerText = myBlance;
+     let demo = document.getElementById('totalesProducatPrice').innerText;
+
+     document.getElementById('totalesProducatPrice').innerText = totalesq;
+
+    //  Clear All Btn Click
+
+    let clear = document.getElementById('clear-all-prices').addEventListener('click', function () {
+       document.getElementById('addes').innerText = " ";
+    })
+     console.log(demo);
       
-
+    // document.getElementById('totalprices').innerText = myBlance;
       
     }
   });
